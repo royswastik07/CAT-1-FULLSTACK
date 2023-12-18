@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>write your mail</title>
+    <link rel="stylesheet" href="./compose.css">
+</head>
+<body>
+    <div class="email-container">
+        <h2>New Message</h2>
+        <form action="" method="post">
+            <div>
+                <input type="email" placeholder="To" name="to" required>
+            </div>
+            <br>
+            <div>
+                <input type="email" placeholder="Cc" name="cc">
+                <input type="email" placeholder="Bcc" name="bcc">
+            </div>
+            <br>
+            <input type="text" placeholder="Subject" name="subject">
+            <textarea name="message" placeholder="Compose email"></textarea>
+            <button type="submit" onclick="submitForm()">Send</button>
+        </form>
+    </div>    
+    <script>
+        function submitForm() {
+            // You can perform additional validation here if needed
+
+            // Display a confirmation message
+            alert('Email sent successfully!'); // You might want to use a more sophisticated UI for this
+
+            // Optionally, you can reset the form
+            document.getElementById('emailForm').reset();
+        }
+    </script>
+    
+</body>
+</html>
